@@ -14,7 +14,8 @@ $(document).ready(function() {
          scrollOverflow: true,
          touchSensitivity: 15,
          normalScrollElementTouchThreshold: 10,
-         fitToSection: true
+         fitToSection: true,
+         fixedElements: '.wrapper-popup',
     });
 
     bindEvents();
@@ -29,8 +30,7 @@ $(document).ready(function() {
            nav:true,
            merge:true,
            center:true,
-         items : 1
-
+           items : 1
          });
 
         carouselCount ++;
