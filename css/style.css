@@ -971,6 +971,11 @@ section {
 	opacity: .7;
 }
 
+.owl-carousel .owl-item img {
+    height: 50vh;
+    object-fit: cover;
+}
+
 
 /* PopUp WD */
 
@@ -982,7 +987,7 @@ section {
 	z-index: 998;
 	border: 1vw solid #3c3c3c;
 	width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
 	display: block;     /* скрываем окно */
     visibility: hidden;
@@ -998,7 +1003,7 @@ section {
 }
 
 .slider-item{
-    z-index: 999;
+    z-index: 10;
     position: absolute;
     top: 5%;
     width: 100%;
@@ -1029,7 +1034,7 @@ section {
 	width: 90%;
 	margin: 0 auto;
 	position: relative;
-	z-index: 999;
+	z-index: 100;
 }
 
 .slider-wd__title__img {
@@ -1414,7 +1419,7 @@ section {
 .close-popup {
 	display: block;
     width: 1.6%;
-    height: 1.6%;
+/*    height: 1.6%;*/
 	background-size: cover;
 	position: absolute;
 	top: 3%;
@@ -1458,7 +1463,7 @@ section {
 .owl-slider .slider_item img{
     display: block;
     width: 100%;
-    height: auto;
+/*    height: auto;*/
 }
 .owl-prev,.owl-next{
 	width: 17px;
@@ -1479,6 +1484,10 @@ section {
 
 .contacts_block .fp-scroller {
     height: 100%;
+}
+
+.gm-style .place-card-large {
+ display: none !important;
 }
 
 /* Мобильная версия */
@@ -1785,8 +1794,12 @@ section {
         display: none !important;
     }
 
-    .contacts_block .fp-scroller {
+   .owl-carousel .owl-item img {
+       height: 40vh;
+    }
 
+    .close-popup {
+        width: 9%;
     }
 
 
@@ -1820,7 +1833,8 @@ section {
 	}
 
 	.block-header {
-		margin-top: 5%;
+/*		margin-top: 5%;*/
+        padding-top:15%;
 	}
 
 	.about-company__text p {

@@ -18,20 +18,27 @@ $(document).ready(function() {
     });
 
     bindEvents();
-  
-  $('#owl-slider').owlCarousel({
-    loop:false,
-    navText:"",
-    nav:true,
-    merge:true,
-    center:true,
-  items : 1
+
     
-  });
-    
-   
-});
-      
+    var carouselCount = 0;
+    $(".owl-slider").each(function () {
+        $(this).attr("id", "owl-slider" + carouselCount);
+        $('#owl-slider' + carouselCount).owlCarousel({
+           loop:false,
+           navText:"",
+           nav:true,
+           merge:true,
+           center:true,
+         items : 1
+
+         });
+
+        carouselCount ++;
+//        console.log(carouselCount);
+        });
+
+    });
+
 function bindEvents(){
     $('.main-menu').on('click', function(){
      $('.menu-sheet').show(600);   
