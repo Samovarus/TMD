@@ -895,7 +895,7 @@ section {
 .map {
 	position: relative;
 	width: 100%;
-	height: 30vw;
+	height: 100%;
 }
 
 .map iframe {
@@ -1948,6 +1948,8 @@ section {
 	.about-company__text p {
 		font-size: 1.6vw;
 	}
+
+
 
 /*	.rows-wrapper {
 		vertical-align: top;
