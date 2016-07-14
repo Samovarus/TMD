@@ -5,17 +5,19 @@ $(document).ready(function() {
         
          onLeave: function(){
             var leavingSection = $(this);
-             hidePopup();
-             resetScrollPosition();
+            hidePopup();
+//             resetScrollPosition();
              $('.menu-sheet').hide(200);
             },
          
          css3: true,
+         autoScrolling: true,
          scrollOverflow: true,
          touchSensitivity: 15,
          normalScrollElementTouchThreshold: 10,
          fitToSection: true,
-         fixedElements: '.wrapper-popup',
+         fixedElements: '.wrapper-popup'
+
     });
 
     bindEvents();

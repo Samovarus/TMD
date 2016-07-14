@@ -13,15 +13,14 @@
 	
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!--	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 
 	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
 	<!--    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
 
-	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/owl/owl.carousel.min.js"></script>
+
 
 
 <!--
@@ -88,8 +87,8 @@
 	</div>
 </div>
 </section>
-<section  class="section about-us" data-anchor="about">
-	<div class="wrapper-gray">
+<section  class="section about-us grey fp-auto-height" data-anchor="about">
+<!--	<div class="wrapper-gray">-->
 		<div class="block-header">
 			<h1>О компании</h1>
 		</div>
@@ -144,9 +143,9 @@
 
 
 		
-	</div>
+<!--	</div>-->
 </section>
-<section class="section" data-anchor="services">
+<section class="section fp-auto-height" data-anchor="services">
 
 		<div class="block-header">
 			<h1>Услуги</h1>
@@ -199,13 +198,13 @@
 				</div>
 
 </section>
-<section class="section" data-anchor="clients" >
-	<div class="wrapper-gray">
+<section class="section grey fp-auto-height" data-anchor="clients" >
+<!--	<div class="wrapper-gray">-->
 		<div class="block-header">
 			<h1>Клиенты</h1>
 		</div>
 		<!-- <div class="content_block_wrp"> -->
-			<div class="rows-wrapper">
+<!--			<div class="rows-wrapper">-->
 				<div class="clients-row">
 					<div class="clients-row-item" id="wd">
 						<div class="wd-logo">
@@ -224,23 +223,23 @@
 					</div>
 				<!-- </div> -->
 				<!-- <div class="clients-row"> -->
-					<div class="clients-row-item border-none" id="kation">
+					<div class="clients-row-item" id="kation">
 						<div class="kationorm">
 							<img src="img/logo-kationorm.png" width="65%" alt="">
 						</div>
 					</div>
-					<div class="clients-row-item border-none" id="naturkoks">
+					<div class="clients-row-item" id="naturkoks">
 						<div class="natukoksinum">
 							<img src="img/logo-naturkoksinum.png" width="65%" alt="">
 						</div>
 					</div>
-					<div class="clients-row-item border-none" id="intern-paper">
+					<div class="clients-row-item" id="intern-paper">
 						<div class="international-paper">
 							<img src="img/logo-international-paper.png" width="65%" alt="">
 						</div>
 					</div>
 				</div>
-			</div>
+<!--			</div>-->
 		<!-- </div> -->
 		<div class="wrapper-popup wd">
 			<!-- Slider WD -->
@@ -561,10 +560,12 @@
 	
 </div>
 -->
-</div>
+<!--</div>-->
 </section>
 <section class="section contacts_block" data-anchor="map">
-	<div class="wrapper-white">
+
+  <div class="contacts_wrapper">
+    <div class="wrapper-white contacts_cont">
 		<div class="block-header margin">
 			<h1>Контакты</h1>
 		</div>
@@ -598,8 +599,17 @@
 		</div>
 	</div>
 
+ </div>
+
 </section>
 
 </div>
+
+
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/owl/owl.carousel.min.js"></script>
+
+
 </body>
 </html>
